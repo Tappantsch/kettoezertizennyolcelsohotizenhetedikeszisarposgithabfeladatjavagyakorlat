@@ -12,6 +12,7 @@ namespace WindowsFormsApplication1
 {
     public partial class Form1 : Form
     {
+       
         public Form1()
         {
             InitializeComponent();
@@ -24,8 +25,12 @@ namespace WindowsFormsApplication1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Figyelmeztető üzenet a fejlesztőnek, hogy ez még csak teszt, valódi hibabejelentés még nem tesz.Logika még nem kell!",
-    "ajj ajj baj van");
+           List<Hiba> hibak = new List<Hiba>();
+           
+                hibak.Add(new Hiba(textBox1.Text, textBox2.Text, richTextBox1.Text));
+                
+       
         }
+
     }
 }
