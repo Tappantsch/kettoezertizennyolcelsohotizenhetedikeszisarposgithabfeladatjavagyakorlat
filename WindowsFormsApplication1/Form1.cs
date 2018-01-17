@@ -21,5 +21,11 @@ namespace WindowsFormsApplication1
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Figyelmeztető üzenet a fejlesztőnek, hogy ez még csak teszt, valódi hibabejelentés még nem tesz.Logika még nem kell!",
+    "ajj ajj baj van");
+        }
     }
 }
